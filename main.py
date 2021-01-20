@@ -84,7 +84,6 @@ def displayAll():
 
 
 def displaySp(num):
-    global found
     file = pathlib.Path("accounts.data")
     if file.exists():
         infile = open('accounts.data', 'rb')
@@ -102,7 +101,6 @@ def displaySp(num):
 
 
 def depositAndWithdraw(num1, num2):
-    global mylist
     file = pathlib.Path("accounts.data")
     if file.exists():
         infile = open('accounts.data', 'rb')
@@ -167,6 +165,7 @@ def modifyAccount(num):
 
 
 def writeAccountsFile(account):
+    
     file = pathlib.Path("accounts.data")
     if file.exists():
         infile = open('accounts.data', 'rb')
@@ -188,7 +187,7 @@ num = 0
 intro()
 
 while ch != 8:
-    #system("cls")
+    #system("cls");
     print("\tMAIN MENU")
     print("\t1. NEW ACCOUNT")
     print("\t2. DEPOSIT AMOUNT")
@@ -200,7 +199,7 @@ while ch != 8:
     print("\t8. EXIT")
     print("\tSelect Your Option (1-8) ")
     ch = input()
-    #system("cls")
+    #system("cls");
 
     if ch == '1':
         writeAccount()
