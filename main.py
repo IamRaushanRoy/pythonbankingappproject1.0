@@ -188,7 +188,7 @@ num = 0
 intro()
 
 while ch != 8:
-    system("cls")
+   # system("cls")
     print("\tMAIN MENU")
     print("\t1. NEW ACCOUNT")
     print("\t2. DEPOSIT AMOUNT")
@@ -200,7 +200,7 @@ while ch != 8:
     print("\t8. EXIT")
     print("\tSelect Your Option (1-8) ")
     ch = input()
-    system("cls")
+   # system("cls")
 
     if ch == '1':
         writeAccount()
